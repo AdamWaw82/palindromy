@@ -1,9 +1,12 @@
-def is_it_palindrome(txt: str):
+def is_it_palindrome(word: str):
+    """
+        The function checks whether the given word is a palindrome
+        Arguments:
+        word
+    """
     reversed_string = ""
-    for char_index in range(len(txt) -1, -1, -1):
-        reversed_string += txt[char_index]
+    for char_index in range(len(word) -1, -1, -1):
+        reversed_string += word[char_index]
 
 
-    return txt == reversed_string
-
-print( is_it_palindrome('test') )
+    return word == reversed_string
